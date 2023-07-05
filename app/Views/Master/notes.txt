@@ -1,0 +1,25 @@
+<table class="table table-striped table-bordered">
+              <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td><?= $nim; ?></td>
+              </tr>
+              <tr>
+                <td>NAMA</td>
+                <td>:</td>
+                <td><?= $nama; ?></td>
+              </tr>
+              <tr>
+                <td>PROGRAM STUDI</td>
+                <td>:</td>
+                <td><?= $nama_pro; ?></td>
+              </tr>
+              <tr>
+                <td>TAHUN AJARAN</td>
+                <td>:</td>
+                <td><?= $thn_akademik."&nbsp".$semester ?></td>
+              </tr>
+            </table>
+
+            <?= base_url('master/cetak')?>
+            SELECT * FROM krs WHERE thn_akademik="2021/2022" AND semester="Ganjil" ORDER BY nim="1957301002"
